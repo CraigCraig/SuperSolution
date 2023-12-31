@@ -14,4 +14,3 @@ This is a description of my project.
 To install this project, follow these steps:
 
 1. Clone the repository
-1. 
