@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34407.89
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projects", "Projects", "{B3DE880C-B2D5-4C7C-9A76-4D2B470DECF2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheetahToolbox", "Projects\CheetahToolbox\CheetahToolbox.csproj", "{83AB58E9-BB71-44C1-A7BC-A5214FFC6550}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Default Files", "Default Files", "{DE91A438-FD0A-4F3C-A74F-16224EC51022}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{91195DAC-3A9A-4D21-B6D5-CE922C480F6C}"
+	ProjectSection(SolutionItems) = preProject
+		Resources\cheetah.ico = Resources\cheetah.ico
+		Resources\penguin.ico = Resources\penguin.ico
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BD751421-4017-4065-9904-9EC863F224BB}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		Craig's Super Solution.code-workspace = Craig's Super Solution.code-workspace
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Linux = Debug|Linux
+		Debug|Windows = Debug|Windows
+		Release|Linux = Release|Linux
+		Release|Windows = Release|Windows
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83AB58E9-BB71-44C1-A7BC-A5214FFC6550}.Debug|Linux.ActiveCfg = Debug|Linux
+		{83AB58E9-BB71-44C1-A7BC-A5214FFC6550}.Debug|Linux.Build.0 = Debug|Linux
+		{83AB58E9-BB71-44C1-A7BC-A5214FFC6550}.Debug|Windows.ActiveCfg = Debug|Windows
+		{83AB58E9-BB71-44C1-A7BC-A5214FFC6550}.Debug|Windows.Build.0 = Debug|Windows
+		{83AB58E9-BB71-44C1-A7BC-A5214FFC6550}.Release|Linux.ActiveCfg = Release|Linux
+		{83AB58E9-BB71-44C1-A7BC-A5214FFC6550}.Release|Linux.Build.0 = Release|Linux
+		{83AB58E9-BB71-44C1-A7BC-A5214FFC6550}.Release|Windows.ActiveCfg = Release|Windows
+		{83AB58E9-BB71-44C1-A7BC-A5214FFC6550}.Release|Windows.Build.0 = Release|Windows
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{83AB58E9-BB71-44C1-A7BC-A5214FFC6550} = {B3DE880C-B2D5-4C7C-9A76-4D2B470DECF2}
+		{91195DAC-3A9A-4D21-B6D5-CE922C480F6C} = {BD751421-4017-4065-9904-9EC863F224BB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {16FC7433-B145-4070-8582-76A8D4681C4E}
+	EndGlobalSection
+EndGlobal
