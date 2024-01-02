@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Craig's Custom Properties File -->
+<Project Sdk="Microsoft.NET.Sdk">
+	
+	<!-- Common Properties -->
+	<PropertyGroup>
+		<OutDir>$(BuildDir)</OutDir>
+		<Platforms>Windows;Linux;MacOS</Platforms>
+		<Configurations>Debug;Release</Configurations>
+	</PropertyGroup>
+	
+</Project>

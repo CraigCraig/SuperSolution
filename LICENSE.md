@@ -1,6 +1,7 @@
-MIT License
+﻿# MIT License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Copyright (c) [Craig Craig](htpps://github.com/CraigCraig) 2023
+Copyright ©️ 2023 - [Craig Craig](htpps://github.com/CraigCraig)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

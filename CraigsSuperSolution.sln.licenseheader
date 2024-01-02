@@ -1,0 +1,21 @@
+﻿extensions: designer.cs generated.cs
+extensions: .cs .cpp .h
+/// ======================================================================
+///		SuperSolution: (https://github.com/CraigCraig/SuperSolution)
+///				Project:     Craig's Open Source Projects
+///
+///
+///			Author: Craig Craig (https://github.com/CraigCraig)
+///		License:     MIT License (http://opensource.org/licenses/MIT)
+/// ======================================================================
+extensions:  .xml .config .xsd .csproj
+<!--
+======================================================================
+		SuperSolution: (https://github.com/CraigCraig/SuperSolution)
+				Project:     Craig's Open Source Projects
+
+
+			Author:		 Craig Craig (https://github.com/CraigCraig)
+		License:     MIT License (http://opensource.org/licenses/MIT)
+======================================================================
+-->
