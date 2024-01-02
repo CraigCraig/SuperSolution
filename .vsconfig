@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "components": [
+    "Microsoft.VisualStudio.Component.CoreEditor",
+    "Microsoft.VisualStudio.Workload.CoreEditor",
+    "Microsoft.VisualStudio.Component.NuGet",
+    "Microsoft.VisualStudio.Component.IntelliCode",
+    "Microsoft.VisualStudio.Component.Roslyn.Compiler",
+    "Microsoft.Net.Component.TextTemplating",
+    "Microsoft.Net.ComponentGroup.DevelopmentPrerequisites",
+    "Microsoft.Net.Component.4.8.1.SDK",
+    "Microsoft.Net.Component.4.8.1.TargetingPack"
+  ],
+  "extensions": [
+    "https://marketplace.visualstudio.com/items?itemName=AndreyVeselov.SettingsGuard",
+    "https://marketplace.visualstudio.com/items?itemName=GeorgeSamartzidis.MSBuildTargets"
+  ]
+}

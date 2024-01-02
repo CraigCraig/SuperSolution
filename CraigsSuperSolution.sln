@@ -14,8 +14,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BD751421-4017-4065-9904-9EC863F224BB}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
-		BaseProject.csproj = BaseProject.csproj
+		.vsconfig = .vsconfig
 		LICENSE.md = LICENSE.md
+		craig.vs2022.vssettings = craig.vs2022.vssettings
 		README.md = README.md
 		ROADMAP.md = ROADMAP.md
 	EndProjectSection
@@ -24,7 +25,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Craigs Public Repos", "Crai
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Wandering Cheetah", "Wandering Cheetah", "{402BAB3B-7317-47AC-97A9-3B812C51FFF1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Craigs Super Solution", "Craigs Super Solution.csproj", "{19792742-EA74-4A80-B63A-C4C80C32A3B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CraigsSuperSolution", "CraigsSuperSolution.csproj", "{19792742-EA74-4A80-B63A-C4C80C32A3B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Default", "Default", "{76CAA5BA-76AA-48F3-A410-10F60F280616}"
+	ProjectSection(SolutionItems) = preProject
+		Default\BaseProject.csproj = Default\BaseProject.csproj
+		Default\Common.csproj = Default\Common.csproj
+		Default\Console.csproj = Default\Console.csproj
+		Default\Custom.csproj = Default\Custom.csproj
+		Default\Library.csproj = Default\Library.csproj
+		Default\Tool.csproj = Default\Tool.csproj
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +55,7 @@ Global
 		{91195DAC-3A9A-4D21-B6D5-CE922C480F6C} = {BD751421-4017-4065-9904-9EC863F224BB}
 		{CBC805A1-20D2-49A9-94E2-BAAB19163620} = {B3DE880C-B2D5-4C7C-9A76-4D2B470DECF2}
 		{402BAB3B-7317-47AC-97A9-3B812C51FFF1} = {B3DE880C-B2D5-4C7C-9A76-4D2B470DECF2}
+		{76CAA5BA-76AA-48F3-A410-10F60F280616} = {BD751421-4017-4065-9904-9EC863F224BB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7720D9A0-E33D-496F-B52B-2D00DD8FE63E}

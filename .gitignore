@@ -24,3 +24,4 @@ UpgradeLog*.htm
 
 # Extension Folders and Files
 .vshistory/*
+.fake

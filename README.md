@@ -21,6 +21,12 @@ Feel free to use any of the projects in this solution.<br>
 This project is still in development.<br>
 This means that there will be bugs and missing features.<br>
 
+## How to Use
+
+You need [net8.0](https://dotnet.microsoft.com/download/dotnet/8.0) and [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/) to run this project.<br>)
+The solution will download the required components and extensions, and then will load a custom set of settings.<br>
+This will take a while, so please be patient.<br>
+
 ## Sub-Projects
 
 <!-- Cheetah Toolbox -->
