@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Craig's Console CSProj File -->
+<Project>
+
+	<!-- Common Imports -->
+	<Import Project="Dependencies\BaseProject.csproj" />
+
+	<!-- Craig's Custom Properties -->
+	<PropertyGroup>
+		<CraigProjectType>Console</CraigProjectType>
+	</PropertyGroup>
+	
+</Project>

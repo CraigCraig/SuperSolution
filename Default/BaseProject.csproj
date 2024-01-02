@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Craig's Base Project CSProj File -->
+<Project Sdk="Microsoft.NET.Sdk">
+
+		<PropertyGroup>
+				<AssemblyName>$(ProjectName)</AssemblyName>
+				<RootNamespace>$(ProjectName)</RootNamespace>
+				<LangVersion>latest</LangVersion>
+				<ImplicitUsings>enable</ImplicitUsings>
+				<EnableDefaultItems>false</EnableDefaultItems>
+				<OutDir>$(SolutionDir)Builds\$(ProjectType)</OutDir>
+		</PropertyGroup>
+
+		<!-- Default Console Properties -->
+		<PropertyGroup Condition=" '$(ProjectType)' == 'Console' ">
+				<OutputType>Library</OutputType>
+				<TargetFramework>net8.0</TargetFramework>
+		</PropertyGroup>
+
+		<!-- Default Console Items -->
+		<ItemGroup Condition=" '$(ProjectType)' == 'Console' ">
+				<Compile Include="Program.cs" />
+		</ItemGroup>
+
+		<!-- Build Location -->
+		<PropertyGroup>
+				<OutputPath>$(SolutionDir)Builds\$(ProjectType)</OutputPath>
+				<IntermediateOutputPath>$(SolutionDir)Builds\Intermediate\$(Configuration)</IntermediateOutputPath>
+		</PropertyGroup>
+
+</Project>
