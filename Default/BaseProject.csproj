@@ -14,6 +14,10 @@
 		<EnableDefaultItems>false</EnableDefaultItems>
 	</PropertyGroup>
 
+    <PropertyGroup>
+        <SolutionDir>$(MSBuildStartupDirectory)\</SolutionDir>
+    </PropertyGroup>
+
 	<!-- Configuration/Platform Properties -->
 	<PropertyGroup>
 		<Platforms>Windows;Linux;MacOS</Platforms>
@@ -21,8 +25,8 @@
 	</PropertyGroup>
 
     <!-- Universal Includes -->
-    <ItemGroup>
-        <Compile Include="Program.cs"/>
+    <ItemGroup Condition=" Exists('Program.cs') == true ">
+        <Compile Include="Program.cs" />
     </ItemGroup>
 
     <!-- Windows Includes -->
@@ -68,29 +72,3 @@
     </PropertyGroup>
 
 </Project>
-
-<!--    <PropertyGroup>
-        <OutputType>$(ProjectType)</OutputType>
-        <AssemblyName>$(ProjectName)</AssemblyName>
-        <RootNamespace>$(ProjectName)</RootNamespace>
-        <LangVersion>latest</LangVersion>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <EnableDefaultItems>false</EnableDefaultItems>
-        <OutDir>$(SolutionDir)Builds\$(ProjectType)</OutDir>
-    </PropertyGroup>
-
-    --><!-- Default Console Properties --><!--
-    <PropertyGroup Condition=" '$(ProjectType)' == 'Console' ">
-        <OutputType>Exe</OutputType>
-    </PropertyGroup>
-
-    --><!-- Default Console Items --><!--
-    <ItemGroup Condition=" '$(ProjectType)' == 'Console' ">
-        <Compile Include="Program.cs" />
-    </ItemGroup>
-
-    --><!-- Build Location --><!--
-    <PropertyGroup>
-        <OutDir>$(SolutionDir)Builds\$(ProjectName)-$(Configuration)</OutDir>
-        <IntermediateOutputPath>$(SolutionDir)Builds\Intermediate\$(ProjectName)-$(Configuration)</IntermediateOutputPath>
-    </PropertyGroup>-->

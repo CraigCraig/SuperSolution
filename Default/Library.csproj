@@ -2,12 +2,12 @@
 <!-- Craig's Library CSProj File -->
 <Project>
 
-	<!-- Common Imports -->
-	<Import Project="BaseProject.csproj" />
-
 	<!-- Craig's Custom Properties -->
 	<PropertyGroup>
 		<ProjectType>Library</ProjectType>
 	</PropertyGroup>
+
+    <!-- Common Imports -->
+	<Import Project="BaseProject.csproj" />
 	
 </Project>

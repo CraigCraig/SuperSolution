@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Craig's Tool CSProj File -->
 <Project>
-
-    <!-- Common Imports -->
-	<Import Project="BaseProject.csproj" />
 	
 	<!-- Craig's Custom Properties -->
 	<PropertyGroup>
 		<ProjectType>Tool</ProjectType>
 	</PropertyGroup>
+
+    <!-- Common Imports -->
+	<Import Project="BaseProject.csproj" />
 	
 </Project>
