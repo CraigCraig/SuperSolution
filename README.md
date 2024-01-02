@@ -2,54 +2,47 @@
 
 # SuperSolution <a name="top"></a>
 
-[![GitHub issues](https://img.shields.io/github/issues/CraigCraig/SuperSolution)](https://github.com/CraigCraig/SuperSolution/issues)<br>
-[![GitHub last commit](https://img.shields.io/github/last-commit/CraigCraig/SuperSolution?logo=github)](https://github.com/CraigCraig/SuperSolution/commits/master)
-[![NET8.0](https://img.shields.io/badge/.NET-5.0-blue?logo=dotnet)](https://dotnet.microsoft.com/download/dotnet/8.0)
-[![License](https://img.shields.io/github/license/CraigCraig/SuperSolution)](http://www.apache.org/licenses/MIT)
-[![Discord](https://img.shields.io/discord/1191111275749572658?color=7289da&logo=discord&logoColor=white)](https://discord.gg/XTu5zmaRSk)
+[![MIT License](https://img.shields.io/github/license/CraigCraig/SuperSolution?style=flat-square)](https://pickalicense.com/licenses/mit/)
+[![.NET 8.0](https://img.shields.io/badge/.NET-8.0-512BD4?style=flat-square&logo=.net)](https://dotnet.microsoft.com/download/dotnet/8.0)
+[![Visual Studio 2022](https://img.shields.io/badge/Visual%20Studio-2022-5C2D91?style=flat-square&logo=visual-studio)](https://visualstudio.microsoft.com/vs/preview/)
+[![Windows 11](https://img.shields.io/badge/Windows-11-0078D6?style=flat-square&logo=windows)](https://www.microsoft.com/en-us/windows/windows-11)
+[![Repo Size](https://img.shields.io/github/repo-size/CraigCraig/SuperSolution?style=flat-square)](http://github.com/CraigCraig/SuperSolution)
 
-[![GitHub watchers](https://img.shields.io/github/watchers/CraigCraig/SuperSolution?style=social)](https://github.com/CraigCraig/SuperSolution/watchers)
-[![GitHub stars](https://img.shields.io/github/stars/CraigCraig/SuperSolution?style=social)](https://github.com/CraigCraig/SuperSolution/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/CraigCraig/SuperSolution?style=social)](https://github.com/CraigCraig/SuperSolution/forks)
+Join the Discord server.<br>
+[![Discord](https://img.shields.io/discord/1191111275749572658?style=flat-square&logo=discord)](https://discord.gg/cvfjHKE5Ee)
 
-![Repo Size](https://img.shields.io/github/repo-size/CraigCraig/SuperSolution?logo=github)
+## Description 
 
-## Description
-
-This is a collection of all of my projects.<br>
+This is a collection of all my projects.<br>
 This is so I can easily manage all of my projects in one place.<br>
 Feel free to use any of the projects in this solution.<br>
 
-## Table of Contents
-
-<div style='width:33%'>
-
-[Description](#description)<br>
-[Features](#features)<br>
-[How to Use](#how-to-use)<br>
-[Sub Projects](#sub-projects)<br>
-
-</div>
-
-## Features
-
-`Features coming soon..`
-
-## How to Use
-
-`Instructions coming soon..`
+## ⚠️ Work in Progress ⚠️
+This project is still in development.<br>
+This means that there will be bugs and missing features.<br>
 
 ## Sub-Projects
+
+<!-- Cheetah Toolbox -->
 
 <a href="https://github.com/CraigCraig/CheetahToolbox">
 <img src="https://craigcraig.vercel.app/api/pin/?username=CraigCraig&repo=CheetahToolbox&theme=transparent"></img>
 </a>
+
+<!-- Cheetah Terminal -->
+
 <a href="https://github.com/CraigCraig/CheetahTerminal">
 <img src="https://craigcraig.vercel.app/api/pin/?username=CraigCraig&repo=CheetahTerminal&theme=transparent"></img>
 </a>
+
+<!-- Cheetah App -->
+
 <a href="https://github.com/CraigCraig/CheetahApp">
 <img src="https://craigcraig.vercel.app/api/pin/?username=CraigCraig&repo=CheetahApp&theme=transparent"></img>
 </a>
+
+<!-- Cheetah Utils -->
+
 <a href="https://github.com/CraigCraig/CheetahUtils">
 <img src="https://craigcraig.vercel.app/api/pin/?username=CraigCraig&repo=CheetahUtils&theme=transparent"></img>
 </a>
