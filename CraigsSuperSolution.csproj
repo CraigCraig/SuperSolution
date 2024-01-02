@@ -1,9 +1,9 @@
-﻿<Project>
+<Project>
 
 		<PropertyGroup>
 				<ProjectType>Console</ProjectType>
 		</PropertyGroup>
 
-		<Import Project="Default\BaseProject.csproj" />
+		<Import Project="Default\Console.csproj" />
 
 </Project>
