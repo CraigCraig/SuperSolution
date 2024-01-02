@@ -1,0 +1,9 @@
+﻿<Project>
+
+		<PropertyGroup>
+				<ProjectType>Console</ProjectType>
+		</PropertyGroup>
+
+		<Import Project="Default\BaseProject.csproj" />
+
+</Project>
