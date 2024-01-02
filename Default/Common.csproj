@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!--
 Craig's Common CSProj Properties
 
@@ -11,68 +11,8 @@ This file is intended to be used with the following files:
 - link:Tool.csproj
 - link:Library.csproj
 -->
-<Project>
+<Project Sdk="Microsoft.NET.Sdk">
 
-	<!-- Inherit Settings -->
-	<PropertyGroup>
-		<ProjectName>$(MSBuildProjectName)</ProjectName>
-		<Platforms>$(Platforms);Windows;Linux;MacOS</Platforms>
-		<Configuration>$(Configuration);Debug;Release</Configuration>
-		<DefineConstants>$(DefineConstants);$(ProjectName.ToUpper())</DefineConstants>
 
-		<!-- BuildDir -->
-		<SolutionExt>$(SolutionExt)</SolutionExt>
-
-	</PropertyGroup>
-
-	<!-- Common Properties -->
-	<PropertyGroup>
-		<OutputType>Exe</OutputType>
-		<RootNamespace>$(ProjectName)</RootNamespace>
-		<AssemblyName>$(ProjectName)</AssemblyName>
-		<TargetFramework>net8.0</TargetFramework>
-		<OutDir>$(BuildDir)</OutDir>
-		<ImplicitUsings>true</ImplicitUsings>
-		<Nullable>enable</Nullable>
-		<LangVersion>latest</LangVersion>
-		<Version>1.0.0</Version>
-		<EnableDefaultItems>false</EnableDefaultItems>
-	</PropertyGroup>
-
-	<!-- Configuration/Platform Properties -->
-	<PropertyGroup>
-		<Plaforms>$(Platforms);Windows;Linux</Plaforms>
-		<Configuration>$(Configuration);Debug;Release</Configuration>
-	</PropertyGroup>
-
-	<!-- Debug Properties -->
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-		<DefineConstants>$(DefineConstants)TRACE;DEBUG</DefineConstants>
-		<Optimize>false</Optimize>
-	</PropertyGroup>
-
-	<!-- Release Properties -->
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-		<DefineConstants>$(DefineConstants)TRACE</DefineConstants>
-	</PropertyGroup>
-
-	<!-- Tool Item Groups -->
-	<ItemGroup Condition=" '$(CraigUseNewtonsoft)' == 'true' ">
-		<!-- Newtonsoft.Json -->
-		<PackageReference Include="Newtonsoft.Json"
-						  Version="12.0.3" />
-	</ItemGroup>
-
-	<!-- Library Item Groups -->
-	<ItemGroup Condition=" '$(CraigUseCheetahUtils)' == 'true' ">
-		<!-- CheetahUtils -->
-		<PackageReference Include="CheetahUtils"
-						  Version="1.0.0" />
-	</ItemGroup>
-
-	<!-- Target Before Build -->
-	<Target Name="BeforeBuild">
-		<Exec Command="echo $(CraigProjectType)" />
-	</Target>
 
 </Project>

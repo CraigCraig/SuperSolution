@@ -1,9 +1,9 @@
 <Project>
 
-		<PropertyGroup>
-				<ProjectType>Console</ProjectType>
-		</PropertyGroup>
+    <PropertyGroup>
+        <ProjectName>CraigsSuperSolution</ProjectName>
+    </PropertyGroup>
 
-		<Import Project="Default\Console.csproj" />
+    <Import Project="Default\Console.csproj" />
 
 </Project>

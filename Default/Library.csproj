@@ -3,11 +3,11 @@
 <Project>
 
 	<!-- Common Imports -->
-	<Import Project="Dependencies\BaseProject.csproj" />
+	<Import Project="BaseProject.csproj" />
 
 	<!-- Craig's Custom Properties -->
 	<PropertyGroup>
-		<CraigProjectType>Library</CraigProjectType>
+		<ProjectType>Library</ProjectType>
 	</PropertyGroup>
 	
 </Project>

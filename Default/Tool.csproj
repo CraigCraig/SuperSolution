@@ -2,13 +2,12 @@
 <!-- Craig's Tool CSProj File -->
 <Project>
 
-	<!-- Common Imports -->
-	<Import Project="Console.csproj" />
+    <!-- Common Imports -->
+	<Import Project="BaseProject.csproj" />
 	
 	<!-- Craig's Custom Properties -->
 	<PropertyGroup>
-		<CraigProjectType>Tool</CraigProjectType>
-		<CraigUseNewtonsoft>true</CraigUseNewtonsoft>
+		<ProjectType>Tool</ProjectType>
 	</PropertyGroup>
 	
 </Project>

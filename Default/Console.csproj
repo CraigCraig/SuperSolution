@@ -2,12 +2,11 @@
 <!-- Craig's Console CSProj File -->
 <Project>
 
-	<!-- Common Imports -->
-	<Import Project="Dependencies\BaseProject.csproj" />
-
 	<!-- Craig's Custom Properties -->
 	<PropertyGroup>
-		<CraigProjectType>Console</CraigProjectType>
+        <ProjectType>Console</ProjectType>
 	</PropertyGroup>
+
+    <Import Project="BaseProject.csproj" />
 	
 </Project>

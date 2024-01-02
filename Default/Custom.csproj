@@ -4,7 +4,7 @@
 	
 	<!-- Common Properties -->
 	<PropertyGroup>
-		<OutDir>$(BuildDir)</OutDir>
+		<OutDir>$(SolutionDir)Builds\$(ProjectName)-$(Configuration)</OutDir>
 		<Platforms>Windows;Linux;MacOS</Platforms>
 		<Configurations>Debug;Release</Configurations>
 	</PropertyGroup>

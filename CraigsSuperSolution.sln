@@ -15,8 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		.vsconfig = .vsconfig
-		LICENSE.md = LICENSE.md
 		craig.vs2022.vssettings = craig.vs2022.vssettings
+		LICENSE.md = LICENSE.md
 		README.md = README.md
 		ROADMAP.md = ROADMAP.md
 	EndProjectSection
@@ -30,9 +30,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Default", "Default", "{76CAA5BA-76AA-48F3-A410-10F60F280616}"
 	ProjectSection(SolutionItems) = preProject
 		Default\BaseProject.csproj = Default\BaseProject.csproj
-		Default\Common.csproj = Default\Common.csproj
 		Default\Console.csproj = Default\Console.csproj
-		Default\Custom.csproj = Default\Custom.csproj
 		Default\Library.csproj = Default\Library.csproj
 		Default\Tool.csproj = Default\Tool.csproj
 	EndProjectSection
@@ -43,10 +41,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{19792742-EA74-4A80-B63A-C4C80C32A3B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{19792742-EA74-4A80-B63A-C4C80C32A3B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{19792742-EA74-4A80-B63A-C4C80C32A3B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{19792742-EA74-4A80-B63A-C4C80C32A3B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19792742-EA74-4A80-B63A-C4C80C32A3B9}.Debug|Any CPU.ActiveCfg = Debug|Windows
+		{19792742-EA74-4A80-B63A-C4C80C32A3B9}.Debug|Any CPU.Build.0 = Debug|Windows
+		{19792742-EA74-4A80-B63A-C4C80C32A3B9}.Release|Any CPU.ActiveCfg = Release|Windows
+		{19792742-EA74-4A80-B63A-C4C80C32A3B9}.Release|Any CPU.Build.0 = Release|Windows
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

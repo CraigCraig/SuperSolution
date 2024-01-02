@@ -1,0 +1,3 @@
+[submodule "Projects/CheetahUtils"]
+	path = Projects/CheetahUtils
+	url = https://github.com/CraigCraig/CheetahUtils
