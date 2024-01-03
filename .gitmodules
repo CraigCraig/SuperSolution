@@ -4,3 +4,9 @@
 [submodule "Projects/CheetahToolbox"]
 	path = Projects/CheetahToolbox
 	url = https://github.com/CraigCraig/CheetahToolbox
+[submodule "CheetahToolbox"]
+	path = CheetahToolbox
+	url = https://github.com/CraigCraig/CheetahToolbox
+[submodule "CheetahUtils"]
+	path = CheetahUtils
+	url = https://github.com/CraigCraig/CheetahUtils
