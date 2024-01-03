@@ -18,7 +18,7 @@
     <ItemGroup>
         <Compile Remove="Projects\**" />
         <Content Remove="Projects\**" />
-        <Content Remove="PrivateProjects\**" />
+        <Compile Remove="PrivateProjects\**" />
         <Content Remove="PrivateProjects\**" />
     </ItemGroup>
 
