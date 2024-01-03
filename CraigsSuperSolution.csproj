@@ -1,9 +1,31 @@
-<Project>
+<Project Sdk="Microsoft.NET.Sdk" DefaultTargets="Build">
 
     <PropertyGroup>
         <ProjectName>CraigsSuperSolution</ProjectName>
+        <SkipCopyUnchangedFiles>true</SkipCopyUnchangedFiles>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <EnableDefaultItems>false</EnableDefaultItems>
+        <Configurations>Release;Debug</Configurations>
+        <Platforms>Windows;Linux;MacOS</Platforms>
     </PropertyGroup>
 
-    <Import Project="Default\Console.csproj" />
+    <ItemGroup>
+        <Compile Include="**\*.cs" Exclude="obj\**" />
+        <Content Include="**\*.md" />
+        <Content Include=".gitignore" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Remove="Projects\**" />
+        <Content Remove="Projects\**" />
+        <Content Remove="PrivateProjects\**" />
+        <Content Remove="PrivateProjects\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="Default.csproj" />
+    </ItemGroup>
+
+    <Import Project="Default.csproj" />
 
 </Project>
