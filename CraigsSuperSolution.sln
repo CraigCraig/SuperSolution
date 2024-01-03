@@ -5,22 +5,6 @@ VisualStudioVersion = 17.9.34407.89
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projects", "Projects", "{B3DE880C-B2D5-4C7C-9A76-4D2B470DECF2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{91195DAC-3A9A-4D21-B6D5-CE922C480F6C}"
-	ProjectSection(SolutionItems) = preProject
-		Resources\cheetah.ico = Resources\cheetah.ico
-		Resources\penguin.ico = Resources\penguin.ico
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BD751421-4017-4065-9904-9EC863F224BB}"
-	ProjectSection(SolutionItems) = preProject
-		Projects\CheetahToolbox\.editorconfig = Projects\CheetahToolbox\.editorconfig
-		.gitignore = .gitignore
-		.vsconfig = .vsconfig
-		LICENSE.md = LICENSE.md
-		README.md = README.md
-		ROADMAP.md = ROADMAP.md
-	EndProjectSection
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CraigsSuperSolution", "CraigsSuperSolution.csproj", "{19792742-EA74-4A80-B63A-C4C80C32A3B9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheetahToolbox", "Projects\CheetahToolbox\CheetahToolbox.csproj", "{0F1F9AD9-5883-4790-A898-5F43CA619BD5}"
@@ -78,7 +62,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{91195DAC-3A9A-4D21-B6D5-CE922C480F6C} = {BD751421-4017-4065-9904-9EC863F224BB}
 		{0F1F9AD9-5883-4790-A898-5F43CA619BD5} = {B3DE880C-B2D5-4C7C-9A76-4D2B470DECF2}
 		{B68B29EC-061C-4D6F-A6F5-E72A76AA8B3C} = {B3DE880C-B2D5-4C7C-9A76-4D2B470DECF2}
 	EndGlobalSection
