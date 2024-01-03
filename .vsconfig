@@ -13,6 +13,8 @@
   ],
   "extensions": [
     "https://marketplace.visualstudio.com/items?itemName=AndreyVeselov.SettingsGuard",
-    "https://marketplace.visualstudio.com/items?itemName=GeorgeSamartzidis.MSBuildTargets"
+    "https://marketplace.visualstudio.com/items?itemName=GeorgeSamartzidis.MSBuildTargets",
+    "https://marketplace.visualstudio.com/items?itemName=MattLaceyLtd.CommentLinks",
+    "https://marketplace.visualstudio.com/items?itemName=EWoodruff.ExtendedDocCommentsProvider2022"
   ]
 }
