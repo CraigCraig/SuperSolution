@@ -1,6 +1,6 @@
 <div align=center>
-
-# SuperSolution
+ 
+# <a href="http://github.com/CraigCraig"><img src="https://raw.githubusercontent.com/CraigCraig/SuperSolution/main/Resources/penguin.ico" width=24 height=24 /><a/> SuperSolution
 
 [![MIT License](https://img.shields.io/github/license/CraigCraig/SuperSolution?style=flat-square)](https://pickalicense.com/licenses/mit/)
 [![.NET 8.0](https://img.shields.io/badge/.NET-8.0-512BD4?style=flat-square&logo=.net)](https://dotnet.microsoft.com/download/dotnet/8.0)
@@ -11,15 +11,15 @@
 Join the Discord server.<br>
 [![Discord](https://img.shields.io/discord/1191111275749572658?style=flat-square&logo=discord)](https://discord.gg/cvfjHKE5Ee)
 
-## Description 
+## 👷 ⚠️ Work in Progress ⚠️ 👷
+This project is still in development.<br>
+This means that there will be bugs and missing features.<br>
+
+## Description
 
 This is a collection of all my projects.<br>
 This is so I can easily manage all of my projects in one place.<br>
 Feel free to use any of the projects in this solution.<br>
-
-## ⚠️ Work in Progress ⚠️
-This project is still in development.<br>
-This means that there will be bugs and missing features.<br>
 
 ## How to Use
 
