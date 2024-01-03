@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34407.89
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projects", "Projects", "{B3DE880C-B2D5-4C7C-9A76-4D2B470DECF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheetahToolbox", "CheetahToolbox\CheetahToolbox.csproj", "{63157437-6D8C-4532-A38D-31D79EB9FE95}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CraigsSuperSolution", "CraigsSuperSolution.csproj", "{19792742-EA74-4A80-B63A-C4C80C32A3B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheetahUtils", "CheetahUtils\CheetahUtils.csproj", "{A3C5E844-831B-4643-8879-ECC4A13D7D64}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheetahToolbox", "Projects\CheetahToolbox\CheetahToolbox.csproj", "{0F1F9AD9-5883-4790-A898-5F43CA619BD5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{736BBE28-31C2-47BF-89AB-21652F7781E9}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheetahUtils", "Projects\CheetahUtils\CheetahUtils.csproj", "{B68B29EC-061C-4D6F-A6F5-E72A76AA8B3C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{01A24424-4C58-4AFC-9645-2F129F099FFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,49 +25,36 @@ Global
 		Release|Windows = Release|Windows
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{19792742-EA74-4A80-B63A-C4C80C32A3B9}.Debug|Linux.ActiveCfg = Debug|Linux
-		{19792742-EA74-4A80-B63A-C4C80C32A3B9}.Debug|Linux.Build.0 = Debug|Linux
-		{19792742-EA74-4A80-B63A-C4C80C32A3B9}.Debug|MacOS.ActiveCfg = Debug|MacOS
-		{19792742-EA74-4A80-B63A-C4C80C32A3B9}.Debug|MacOS.Build.0 = Debug|MacOS
-		{19792742-EA74-4A80-B63A-C4C80C32A3B9}.Debug|Windows.ActiveCfg = Debug|Windows
-		{19792742-EA74-4A80-B63A-C4C80C32A3B9}.Debug|Windows.Build.0 = Debug|Windows
-		{19792742-EA74-4A80-B63A-C4C80C32A3B9}.Release|Linux.ActiveCfg = Release|Linux
-		{19792742-EA74-4A80-B63A-C4C80C32A3B9}.Release|Linux.Build.0 = Release|Linux
-		{19792742-EA74-4A80-B63A-C4C80C32A3B9}.Release|MacOS.ActiveCfg = Release|MacOS
-		{19792742-EA74-4A80-B63A-C4C80C32A3B9}.Release|MacOS.Build.0 = Release|MacOS
-		{19792742-EA74-4A80-B63A-C4C80C32A3B9}.Release|Windows.ActiveCfg = Release|Windows
-		{19792742-EA74-4A80-B63A-C4C80C32A3B9}.Release|Windows.Build.0 = Release|Windows
-		{0F1F9AD9-5883-4790-A898-5F43CA619BD5}.Debug|Linux.ActiveCfg = Debug|Linux
-		{0F1F9AD9-5883-4790-A898-5F43CA619BD5}.Debug|Linux.Build.0 = Debug|Linux
-		{0F1F9AD9-5883-4790-A898-5F43CA619BD5}.Debug|MacOS.ActiveCfg = Debug|MacOS
-		{0F1F9AD9-5883-4790-A898-5F43CA619BD5}.Debug|MacOS.Build.0 = Debug|MacOS
-		{0F1F9AD9-5883-4790-A898-5F43CA619BD5}.Debug|Windows.ActiveCfg = Debug|Windows
-		{0F1F9AD9-5883-4790-A898-5F43CA619BD5}.Debug|Windows.Build.0 = Debug|Windows
-		{0F1F9AD9-5883-4790-A898-5F43CA619BD5}.Release|Linux.ActiveCfg = Release|Linux
-		{0F1F9AD9-5883-4790-A898-5F43CA619BD5}.Release|Linux.Build.0 = Release|Linux
-		{0F1F9AD9-5883-4790-A898-5F43CA619BD5}.Release|MacOS.ActiveCfg = Release|MacOS
-		{0F1F9AD9-5883-4790-A898-5F43CA619BD5}.Release|MacOS.Build.0 = Release|MacOS
-		{0F1F9AD9-5883-4790-A898-5F43CA619BD5}.Release|Windows.ActiveCfg = Release|Windows
-		{0F1F9AD9-5883-4790-A898-5F43CA619BD5}.Release|Windows.Build.0 = Release|Windows
-		{B68B29EC-061C-4D6F-A6F5-E72A76AA8B3C}.Debug|Linux.ActiveCfg = Debug|Linux
-		{B68B29EC-061C-4D6F-A6F5-E72A76AA8B3C}.Debug|Linux.Build.0 = Debug|Linux
-		{B68B29EC-061C-4D6F-A6F5-E72A76AA8B3C}.Debug|MacOS.ActiveCfg = Debug|MacOS
-		{B68B29EC-061C-4D6F-A6F5-E72A76AA8B3C}.Debug|MacOS.Build.0 = Debug|MacOS
-		{B68B29EC-061C-4D6F-A6F5-E72A76AA8B3C}.Debug|Windows.ActiveCfg = Debug|Windows
-		{B68B29EC-061C-4D6F-A6F5-E72A76AA8B3C}.Debug|Windows.Build.0 = Debug|Windows
-		{B68B29EC-061C-4D6F-A6F5-E72A76AA8B3C}.Release|Linux.ActiveCfg = Release|Linux
-		{B68B29EC-061C-4D6F-A6F5-E72A76AA8B3C}.Release|Linux.Build.0 = Release|Linux
-		{B68B29EC-061C-4D6F-A6F5-E72A76AA8B3C}.Release|MacOS.ActiveCfg = Release|MacOS
-		{B68B29EC-061C-4D6F-A6F5-E72A76AA8B3C}.Release|MacOS.Build.0 = Release|MacOS
-		{B68B29EC-061C-4D6F-A6F5-E72A76AA8B3C}.Release|Windows.ActiveCfg = Release|Windows
-		{B68B29EC-061C-4D6F-A6F5-E72A76AA8B3C}.Release|Windows.Build.0 = Release|Windows
+		{63157437-6D8C-4532-A38D-31D79EB9FE95}.Debug|Linux.ActiveCfg = Debug|Linux
+		{63157437-6D8C-4532-A38D-31D79EB9FE95}.Debug|Linux.Build.0 = Debug|Linux
+		{63157437-6D8C-4532-A38D-31D79EB9FE95}.Debug|MacOS.ActiveCfg = Debug|MacOS
+		{63157437-6D8C-4532-A38D-31D79EB9FE95}.Debug|MacOS.Build.0 = Debug|MacOS
+		{63157437-6D8C-4532-A38D-31D79EB9FE95}.Debug|Windows.ActiveCfg = Debug|Windows
+		{63157437-6D8C-4532-A38D-31D79EB9FE95}.Debug|Windows.Build.0 = Debug|Windows
+		{63157437-6D8C-4532-A38D-31D79EB9FE95}.Release|Linux.ActiveCfg = Release|Linux
+		{63157437-6D8C-4532-A38D-31D79EB9FE95}.Release|Linux.Build.0 = Release|Linux
+		{63157437-6D8C-4532-A38D-31D79EB9FE95}.Release|MacOS.ActiveCfg = Release|MacOS
+		{63157437-6D8C-4532-A38D-31D79EB9FE95}.Release|MacOS.Build.0 = Release|MacOS
+		{63157437-6D8C-4532-A38D-31D79EB9FE95}.Release|Windows.ActiveCfg = Release|Windows
+		{63157437-6D8C-4532-A38D-31D79EB9FE95}.Release|Windows.Build.0 = Release|Windows
+		{A3C5E844-831B-4643-8879-ECC4A13D7D64}.Debug|Linux.ActiveCfg = Debug|Linux
+		{A3C5E844-831B-4643-8879-ECC4A13D7D64}.Debug|Linux.Build.0 = Debug|Linux
+		{A3C5E844-831B-4643-8879-ECC4A13D7D64}.Debug|MacOS.ActiveCfg = Debug|MacOS
+		{A3C5E844-831B-4643-8879-ECC4A13D7D64}.Debug|MacOS.Build.0 = Debug|MacOS
+		{A3C5E844-831B-4643-8879-ECC4A13D7D64}.Debug|Windows.ActiveCfg = Debug|Windows
+		{A3C5E844-831B-4643-8879-ECC4A13D7D64}.Debug|Windows.Build.0 = Debug|Windows
+		{A3C5E844-831B-4643-8879-ECC4A13D7D64}.Release|Linux.ActiveCfg = Release|Linux
+		{A3C5E844-831B-4643-8879-ECC4A13D7D64}.Release|Linux.Build.0 = Release|Linux
+		{A3C5E844-831B-4643-8879-ECC4A13D7D64}.Release|MacOS.ActiveCfg = Release|MacOS
+		{A3C5E844-831B-4643-8879-ECC4A13D7D64}.Release|MacOS.Build.0 = Release|MacOS
+		{A3C5E844-831B-4643-8879-ECC4A13D7D64}.Release|Windows.ActiveCfg = Release|Windows
+		{A3C5E844-831B-4643-8879-ECC4A13D7D64}.Release|Windows.Build.0 = Release|Windows
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{0F1F9AD9-5883-4790-A898-5F43CA619BD5} = {B3DE880C-B2D5-4C7C-9A76-4D2B470DECF2}
-		{B68B29EC-061C-4D6F-A6F5-E72A76AA8B3C} = {B3DE880C-B2D5-4C7C-9A76-4D2B470DECF2}
+		{A3C5E844-831B-4643-8879-ECC4A13D7D64} = {01A24424-4C58-4AFC-9645-2F129F099FFE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7720D9A0-E33D-496F-B52B-2D00DD8FE63E}
