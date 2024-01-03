@@ -1,6 +1,11 @@
 <Project>
   <!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
-  <Target Name="CopyGlobalFiles" AfterTargets="Build">
+    <Target Name="DebugInfo" AfterTargets="BeforeBuild">
+        <Message Text="Reference: CheetahUtils -> $(CheetahUtils)" Importance="high" Condition=" '$(CheetahUtils)' != '' " />
+        <Message Text="ProjectType: $(ProjectType)" Importance="high" Condition=" '$(ProjectType)' != '' " />
+    </Target>
+    <!-- After Build-->
+    <Target Name="CopyGlobalFiles" AfterTargets="Build">
       <Message Text="Copying Global Files" Importance="high" />
       <Copy SourceFiles="$(SolutionDir).gitignore" DestinationFolder="$(ProjectDir)" ContinueOnError="true" />
       <Copy SourceFiles="$(SolutionDir).editorconfig" DestinationFolder="$(ProjectDir)" ContinueOnError="true" />

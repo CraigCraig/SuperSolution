@@ -3,18 +3,27 @@
 
   <!-- Universal Properties -->
   <PropertyGroup>
+    <!-- Project Name Properties -->
     <ProjectName Condition=" '$(ProjectName)' == '' ">$(MsBuildProjectName)</ProjectName>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>true</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <Configurations>Release;Debug</Configurations>
-    <Platforms>Windows;Linux;MacOS</Platforms>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <EnableDefaultItems>false</EnableDefaultItems>
+    <AssemblyName Condition=" '$(AssemblyName)' == '' ">$(ProjectName)</AssemblyName>
+    <RootNamespace Condition=" '$(RootNamespace)' == '' ">$(ProjectName)</RootNamespace>
+    <!-- Project Properties -->
+    <TargetFramework Condition=" '$(TargetFramework)' == '' ">net8.0</TargetFramework>
+    <LangVersion Condition=" '$(LangVersion)' == '' ">latest</LangVersion>
+    <ImplicitUsings Condition=" '$(ImplicitUsings)' == '' ">enable</ImplicitUsings>
+    <Nullable Condition=" '$(Nullable)' == '' ">enable</Nullable>
+    <EnableDefaultItems Condition=" '$(EnableDefaultItems)' == '' ">False</EnableDefaultItems>
     <OutDir>$(MSBuildStartupDirectory)\Builds\$(MSBuildProjectName)-$(Platform)-$(Configuration)</OutDir>
+    <!-- Configuration & Platform Properties -->
+    <Configurations Condition=" '$(Configurations)' == '' ">Release;Debug</Configurations>
+    <Platforms Condition=" '$(Platforms)' == '' ">Windows;Linux;MacOS</Platforms>
+    <PlatformTarget Condition=" '$(PlatformTarget)' == '' ">AnyCPU</PlatformTarget>
+    <!-- Project Version Properties -->
     <Version Condition=" '$(Version)' == '' ">1.0.0</Version>
     <AssemblyVersion Condition=" '$(Version)' != '' ">$(Version)</AssemblyVersion>
-    <CheetahUtils>$(SolutionDir)CheetahUtils\CheetahUtils.csproj</CheetahUtils>
+    <VersionFile Condition=" '$(Version)' != '' ">$(Version)</VersionFile>
+    <ProductVersion Condition=" '$(Version)' != '' ">$(Version)</ProductVersion>
+    <CheetahUtils Condition=" '$(CheetahUtils)' == '' ">$(SolutionDir)CheetahUtils\CheetahUtils.csproj</CheetahUtils>
   </PropertyGroup>
 
   <!-- Universal Items -->
@@ -27,32 +36,32 @@
 
   <!-- VS Constant -->
   <PropertyGroup>
-    <DefineConstants Condition=" $(VisualStudioVersion) != '' ">EDITOR</DefineConstants>
+    <DefineConstants Condition=" '$(VisualStudioVersion)' != '' ">$(DefineConstants);EDITOR</DefineConstants>
   </PropertyGroup>
 
   <!-- Debug Properties -->
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <DefineConstants>DEBUG</DefineConstants>
+    <DefineConstants>$(DefineConstants);DEBUG</DefineConstants>
   </PropertyGroup>
 
   <!-- Release Properties -->
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-    <DefineConstants>RELEASE</DefineConstants>
+    <DefineConstants>$(DefineConstants);RELEASE</DefineConstants>
   </PropertyGroup>
 
   <!-- Windows Properties -->
   <PropertyGroup Condition=" '$(Platform)' == 'Windows' ">
-    <DefineConstants>WINDOWS</DefineConstants>
+    <DefineConstants>$(DefineConstants);WINDOWS</DefineConstants>
   </PropertyGroup>
 
   <!-- Linux Properties -->
   <PropertyGroup Condition=" '$(Platform)' == 'Linux' ">
-    <DefineConstants>LINUX</DefineConstants>
+    <DefineConstants>$(DefineConstants);LINUX</DefineConstants>
   </PropertyGroup>
 
   <!-- MacOS Properties -->
   <PropertyGroup Condition=" '$(Platform)' == 'MacOS' ">
-    <DefineConstants>MACOS</DefineConstants>
+    <DefineConstants>$(DefineConstants);MACOS</DefineConstants>
   </PropertyGroup>
 
 </Project>
