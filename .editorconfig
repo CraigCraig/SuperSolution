@@ -19,11 +19,6 @@ indent_size = 2
 insert_final_newline = false
 trim_trailing_whitespace = true
 
-# C# Files
-[*.{cs,csproj}]
-ident_style = tab
-indent_size = 4
-
 # JSON Files
 [*.json]
 indent_size = 4
@@ -31,3 +26,9 @@ indent_size = 4
 # XML Files
 [*.xml]
 indent_size = 4
+
+# C# Files
+[*.{cs,csproj}]
+ident_style = tab
+indent_size = 4
+

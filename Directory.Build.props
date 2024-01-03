@@ -1,6 +1,58 @@
 <Project>
   <!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+
+  <!-- Universal Properties -->
   <PropertyGroup>
-    <ProjectName>Test</ProjectName>
+    <ProjectName Condition=" '$(ProjectName)' == '' ">$(MsBuildProjectName)</ProjectName>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>true</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Configurations>Release;Debug</Configurations>
+    <Platforms>Windows;Linux;MacOS</Platforms>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <OutDir>$(MSBuildStartupDirectory)\Builds\$(MSBuildProjectName)-$(Platform)-$(Configuration)</OutDir>
+    <Version Condition=" '$(Version)' == '' ">1.0.0</Version>
+    <AssemblyVersion Condition=" '$(Version)' != '' ">$(Version)</AssemblyVersion>
+    <CheetahUtils>$(SolutionDir)CheetahUtils\CheetahUtils.csproj</CheetahUtils>
   </PropertyGroup>
+
+  <!-- Universal Items -->
+  <ItemGroup>
+    <Content Include="$(SolutionDir).editorconfig" />
+    <Content Include=".gitignore" />
+    <Compile Include="**\*.cs" Exclude="obj\**" />
+    <Content Include="**\*.md" />
+  </ItemGroup>
+
+  <!-- VS Constant -->
+  <PropertyGroup>
+    <DefineConstants Condition=" $(VisualStudioVersion) != '' ">EDITOR</DefineConstants>
+  </PropertyGroup>
+
+  <!-- Debug Properties -->
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DefineConstants>DEBUG</DefineConstants>
+  </PropertyGroup>
+
+  <!-- Release Properties -->
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DefineConstants>RELEASE</DefineConstants>
+  </PropertyGroup>
+
+  <!-- Windows Properties -->
+  <PropertyGroup Condition=" '$(Platform)' == 'Windows' ">
+    <DefineConstants>WINDOWS</DefineConstants>
+  </PropertyGroup>
+
+  <!-- Linux Properties -->
+  <PropertyGroup Condition=" '$(Platform)' == 'Linux' ">
+    <DefineConstants>LINUX</DefineConstants>
+  </PropertyGroup>
+
+  <!-- MacOS Properties -->
+  <PropertyGroup Condition=" '$(Platform)' == 'MacOS' ">
+    <DefineConstants>MACOS</DefineConstants>
+  </PropertyGroup>
+
 </Project>
