@@ -15,7 +15,7 @@
 	<EnableDefaultItems Condition=" '$(EnableDefaultItems)' == '' ">False</EnableDefaultItems>
 	<OutDir>$(MSBuildStartupDirectory)\Builds\$(MSBuildProjectName)-$(Platform)-$(Configuration)</OutDir>
 	<!-- Configuration & Platform Properties -->
-	<Configurations Condition=" '$(Configurations)' == '' ">Release;Debug</Configurations>
+	<Configurations Condition=" '$(Configurations)' == '' ">Release;Debug;Debug (Fake)</Configurations>
 	<Platforms Condition=" '$(Platforms)' == '' ">Windows;Linux;MacOS</Platforms>
 	<PlatformTarget Condition=" '$(PlatformTarget)' == '' ">AnyCPU</PlatformTarget>
 	<!-- Project Version Properties -->
@@ -48,6 +48,11 @@
 	<DefineConstants Condition=" '$(VisualStudioVersion)' != '' ">$(DefineConstants);EDITOR</DefineConstants>
   </PropertyGroup>
 
+	<!-- Debug (Fake) Properties -->
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug (Fake)' ">
+	<DefineConstants>$(DefineConstants);DEBUG</DefineConstants>
+  </PropertyGroup>
+
   <!-- Debug Properties -->
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
 	<DefineConstants>$(DefineConstants);DEBUG</DefineConstants>
@@ -61,16 +66,19 @@
   <!-- Windows Properties -->
   <PropertyGroup Condition=" '$(Platform)' == 'Windows' ">
 	<DefineConstants>$(DefineConstants);WINDOWS</DefineConstants>
+	<DefineConstants Condition=" '$(Configuration)' == 'Debug (Fake)' ">$(DefineConstants);WINDOWS_FAKE</DefineConstants>
   </PropertyGroup>
 
   <!-- Linux Properties -->
   <PropertyGroup Condition=" '$(Platform)' == 'Linux' ">
 	<DefineConstants>$(DefineConstants);LINUX</DefineConstants>
+	<DefineConstants Condition=" '$(Configuration)' == 'Debug (Fake)' ">$(DefineConstants);LINUX_FAKE</DefineConstants>
   </PropertyGroup>
 
   <!-- MacOS Properties -->
   <PropertyGroup Condition=" '$(Platform)' == 'MacOS' ">
 	<DefineConstants>$(DefineConstants);MACOS</DefineConstants>
+	<DefineConstants Condition=" '$(Configuration)' == 'Debug (Fake)' ">$(DefineConstants);MACOS_FAKE</DefineConstants>
   </PropertyGroup>
 
 </Project>
