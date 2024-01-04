@@ -67,18 +67,21 @@
   <PropertyGroup Condition=" '$(Platform)' == 'Windows' ">
 	<DefineConstants>$(DefineConstants);WINDOWS</DefineConstants>
 	<DefineConstants Condition=" '$(Configuration)' == 'Debug (Fake)' ">$(DefineConstants);WINDOWS_FAKE</DefineConstants>
+	<TargetFramework>net8.0-windows</TargetFramework>
   </PropertyGroup>
 
   <!-- Linux Properties -->
   <PropertyGroup Condition=" '$(Platform)' == 'Linux' ">
 	<DefineConstants>$(DefineConstants);LINUX</DefineConstants>
 	<DefineConstants Condition=" '$(Configuration)' == 'Debug (Fake)' ">$(DefineConstants);LINUX_FAKE</DefineConstants>
+	<TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
   <!-- MacOS Properties -->
   <PropertyGroup Condition=" '$(Platform)' == 'MacOS' ">
 	<DefineConstants>$(DefineConstants);MACOS</DefineConstants>
 	<DefineConstants Condition=" '$(Configuration)' == 'Debug (Fake)' ">$(DefineConstants);MACOS_FAKE</DefineConstants>
+	<TargetFramework>net8.0-macos</TargetFramework>
   </PropertyGroup>
 
 </Project>
