@@ -32,7 +32,8 @@
 	<Content Include=".gitignore" />
 	<Compile Include="**\*.cs" Exclude="obj\**" />
 	<Content Include="**\*.md" />
-  </ItemGroup>
+	  <None Include="$(ProjectName).sln.licenseheader" Condition=" 'Exists(ProjectName.sln.licenseheader)' != '' "/>
+	</ItemGroup>
 
   <!-- Extra Implicit Usings -->
 	<ItemGroup>
