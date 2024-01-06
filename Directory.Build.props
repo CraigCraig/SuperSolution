@@ -15,8 +15,8 @@
 	<EnableDefaultItems Condition=" '$(EnableDefaultItems)' == '' ">False</EnableDefaultItems>
 	<OutDir>$(MSBuildStartupDirectory)\Builds\$(MSBuildProjectName)-$(Platform)-$(Configuration)</OutDir>
 	<!-- Configuration & Platform Properties -->
-	<Configurations Condition=" '$(Configurations)' == '' ">Release;Debug;Debug (Fake)</Configurations>
-	<Platforms Condition=" '$(Platforms)' == '' ">Windows;Linux;MacOS</Platforms>
+	<Configurations Condition=" '$(Configurations)' == '' ">Release;Debug;DebugVerbose</Configurations>
+	<Platforms Condition=" '$(Platforms)' == '' ">Windows;Linux;MacOS;AnyOS</Platforms>
 	<PlatformTarget Condition=" '$(PlatformTarget)' == '' ">AnyCPU</PlatformTarget>
 	<!-- Project Version Properties -->
 	<Version Condition=" '$(Version)' == '' ">1.0.0</Version>
@@ -51,8 +51,8 @@
   </PropertyGroup>
 
 	<!-- Debug (Fake) Properties -->
-  <PropertyGroup Condition=" '$(Configuration)' == 'Debug (Fake)' ">
-	<DefineConstants>$(DefineConstants);DEBUG</DefineConstants>
+  <PropertyGroup Condition=" '$(Configuration)' == 'DebugVerbose' ">
+	<DefineConstants>$(DefineConstants);DEBUG;VERBOSE</DefineConstants>
   </PropertyGroup>
 
   <!-- Debug Properties -->
@@ -84,6 +84,12 @@
 	<DefineConstants>$(DefineConstants);MACOS</DefineConstants>
 	<DefineConstants Condition=" '$(Configuration)' == 'Debug (Fake)' ">$(DefineConstants);MACOS_FAKE</DefineConstants>
 	<TargetFramework>net8.0-macos</TargetFramework>
+  </PropertyGroup>
+
+	<!-- AnyOS Properties -->
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyOS' ">
+	<DefineConstants>$(DefineConstants);ANY_OS</DefineConstants>
+	<TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
 </Project>
