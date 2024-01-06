@@ -40,6 +40,7 @@
 		<Using Include="System.Text" />
 		<Using Include="System.IO" />
 		<Using Include="System.Globalization" />
+		<Using Include="System.Diagnostics" />
 		<Using Include="CheetahUtils" Condition=" '$(ProjectName)' != 'CheetahUtils' " />
 	</ItemGroup>
 
