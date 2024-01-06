@@ -41,6 +41,7 @@
 		<Using Include="System.IO" />
 		<Using Include="System.Globalization" />
 		<Using Include="System.Diagnostics" />
+		<Using Include="System.Collections" />
 		<Using Include="CheetahUtils" Condition=" '$(ProjectName)' != 'CheetahUtils' " />
 	</ItemGroup>
 
