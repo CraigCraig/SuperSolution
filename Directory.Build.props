@@ -34,8 +34,8 @@
 	<Content Include="**\*.md" />
 	<Content Include=".filenesting.json" Condition="Exists('.filenesting.json')"/>
 	<Content Include=".github\**" Condition="Exists('.github')"/>
+	<Content Include=".github\dependabot.yml" Condition=" Exists('.github\dependabot.yml') "/>
 	<!--<None Include="$(ProjectName).sln.licenseheader" Condition=" Exists('$(ProjectName).sln.licenseheader') "/>-->
-	  <!--<None Include=".github\dependabot.yml" Condition=" 'Exists(.github\dependabot.yml)' "/>-->
 	  <!--<None Include=".github\workflows\release.yml" Condition=" 'Exists(.github\workflows\release.yml)' "/>-->
 	  <!--<None Include=".github\workflows\nightly.yml" Condition=" 'Exists(.github\workflows\nightly.yml)' "/>-->
 	</ItemGroup>
