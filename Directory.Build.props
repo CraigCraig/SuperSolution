@@ -32,7 +32,12 @@
 	<Content Include=".gitignore" />
 	<Compile Include="**\*.cs" Exclude="obj\**" />
 	<Content Include="**\*.md" />
-	  <None Include="$(ProjectName).sln.licenseheader" Condition=" 'Exists(ProjectName.sln.licenseheader)' != '' "/>
+	<Content Include=".filenesting.json" Condition="Exists('.filenesting.json')"/>
+	<Content Include=".github\**" Condition="Exists('.github')"/>
+	<!--<None Include="$(ProjectName).sln.licenseheader" Condition=" Exists('$(ProjectName).sln.licenseheader') "/>-->
+	  <!--<None Include=".github\dependabot.yml" Condition=" 'Exists(.github\dependabot.yml)' "/>-->
+	  <!--<None Include=".github\workflows\release.yml" Condition=" 'Exists(.github\workflows\release.yml)' "/>-->
+	  <!--<None Include=".github\workflows\nightly.yml" Condition=" 'Exists(.github\workflows\nightly.yml)' "/>-->
 	</ItemGroup>
 
   <!-- Extra Implicit Usings -->
@@ -43,6 +48,11 @@
 		<Using Include="System.Diagnostics" />
 		<Using Include="System.Collections" />
 		<Using Include="CheetahUtils" Condition=" '$(ProjectName)' != 'CheetahUtils' " />
+	</ItemGroup>
+
+	<!-- Project References -->
+	<ItemGroup>
+		<ProjectReference Include="$(CheetahUtils)" Condition=" '$(ProjectName)' != 'CheetahUtils' " />
 	</ItemGroup>
 
   <!-- VS Constant -->
